@@ -14,15 +14,26 @@ body {
     background-color:#F8F8F8;
     padding-left:8px;
     padding-right:8px;
+    overflow:hide;
 }
 
 
-p { text-align:center; }
+table#homogenous {
+    table-layout:fixed;
+}
+
+td { padding:0px; }
+
+p#lpara { 
+    text-align:left;
+    padding:0px 0px 0px 10px;
+}
+
 
 a { text-decoration:none; font-weight:bold; }
-a:link { color:#444444; }
-a:visited { color:#888888; }
-a:hover { text-decoration:underline; }
+a:link { color:#111; }
+a:visited { color:inherit; }
+a:hover { color:#444; }
 a:active { color:#2FDC1C; }
 
 
@@ -74,21 +85,24 @@ h2 {
 #description {
     border:1px solid #DDD;
     border-radius:2px;
+    padding:0px;
 }
 
 #post {
-    border:1px solid #BCD;
-    outline:#BCD solid 0px;
-    padding:4px 17px;
-    background-color:#ECF2F5;
+    border:1px solid #DDD;
+    border-radius:2px;
+    padding:0px;
+}
+
+@font-face {
+    font-family:"lol";
+    src: url(https://github.com/theleagueof/raleway/blob/master/webfonts/raleway_thin-webfont.ttf) format("truetype");
 }
 
 #title {
-    font-family: Raleway;
+    font-family:'Raleway', Helvetica, Arial, sans-serif;
     font-size:4em;
     padding:4px 0px;
-/*    border:1px solid #EEE;*/
-/*    background-color:#FAFAFA;*/
 }
 
 #footer {
